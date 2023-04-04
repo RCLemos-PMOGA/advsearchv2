@@ -10,7 +10,7 @@ function App() {
 
   const handleSearch = async () => {
     const { data, error } = await supabase
-      .from("<your-table-name>")
+      .from("product")
       .select("*")
       .in("category", selectedCategories);
 
